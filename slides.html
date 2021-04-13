@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adobe: soluções de criação, de marketing e de gerenciamento de documentos</title>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel=stylesheet type="text/css" href="style/style.css">
+    <link rel=stylesheet type="text/css" href="style/login.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="menufora">
+      <nav class="menu">
+        <ol>
+          <li class="menu-item">
+            <div id="containerimagem">
+              <img src="img/logo.jpg"/>
+                <h5>Adobe</h5>
+              </img>
+            </div>
+          </li>
+          <li class="menu-item"><a href="#"></a></li>
+          <li class="menu-item"><a href="#">Criatividade e design</a></li>
+          <li class="menu-item"><a href="slides.html">Marketing e comercialização</a></li>
+          <li class="menu-item"><a href="#">PDF e assinaturas eletrônicas</a>
+            <ol class="sub-menu">
+              <li class="menu-item"><a href="#">Adobe</a></li>
+            </ol>
+          </li>
+          <li class="menu-item"><a href="#">Soluções empresariais</a></li>
+          <li class="menu-item"><a href="#">Suporte</a></li>
+          <li class="menu-item"><a href="#">			</a></li>
+          <li class="menu-item"><a href="login.html">Fazer logon</a></li>
+        </ol>
+      </nav>
+    </div>
+    <script type="text/javascript">
+      var index = 0;
+      function slide(){
+        var imgArr = document.getElementById('imgContainer').getElementsByTagName('img');
+        var tamanhoTotal = imgArr.length-1;
+        var indexAnterior = index-1;
+        if(index > tamanhoTotal){
+          index = 0;
+          indexAnterior = tamanhoTotal;
+          imgArr[indexAnterior].style.display = "none";
+          imgArr[index].style.display = "block";
+        }else{
+          if(index == 0){
+            indexAnterior = tamanhoTotal;
+          }
+          imgArr[indexAnterior].style.display = "none";
+          imgArr[index].style.display = "block";
+        }
+        index++;
+      }
+      setInterval(slide,1000);
+    </script>
+    <div id='imgContainer'>
+       <img src="https://s-media-cache-ak0.pinimg.com/736x/82/c0/33/82c033ca0454dd6d8c1d2b6a308bc48d.jpg">
+       <img src="https://www.frm.com.au/assets/Fashion-Men/Rowan-Moorey/_resampled/FrmImage556834-RM-27bw-of-378.jpg">
+       <img src="https://bossip.files.wordpress.com/2012/03/model_curly_hairstyle_muscular_men.jpg?w=700">
+     </div>
+   </body>
+</html>
