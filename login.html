@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adobe: soluções de criação, de marketing e de gerenciamento de documentos</title>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+    <link rel=stylesheet type="text/css" href="style/style.css">
+    <link rel=stylesheet type="text/css" href="style/login.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="menufora">
+      <nav class="menu">
+        <ol>
+          <li class="menu-item">
+            <div id="containerimagem">
+              <img src="img/logo.jpg"/>
+                <h5>Adobe</h5>
+              </img>
+            </div>
+          </li>
+          <li class="menu-item"><a href="#"></a></li>
+          <li class="menu-item"><a href="#">Criatividade e design</a></li>
+          <li class="menu-item"><a href="#">Marketing e comercialização</a></li>
+          <li class="menu-item"><a href="#">PDF e assinaturas eletrônicas</a>
+            <ol class="sub-menu">
+              <li class="menu-item"><a href="#">Adobe</a></li>
+            </ol>
+          </li>
+          <li class="menu-item"><a href="#">Soluções empresariais</a></li>
+          <li class="menu-item"><a href="#">Suporte</a></li>
+          <li class="menu-item"><a href="#">			</a></li>
+          <li class="menu-item"><a href="login.html">Fazer logon</a></li>
+        </ol>
+      </nav>
+    </div>
+    <div class="container" >
+      <a class="links" id="paracadastro"></a>
+      <a class="links" id="paralogin"></a>
+      <div class="content">
+      <!--FORMULÁRIO DE LOGIN-->
+        <div id="login">
+          <form method="post" action="">
+            <h1>Login</h1>
+              <p>
+                <label for="email_login">Seu e-mail</label>
+                <input id="email_login" name="email_login" required="required" type="text" placeholder="seunome@adoble.com"/>
+              </p>
+              <p>
+                <label for="senha_login">Sua senha</label>
+                <input id="senha_login" name="senha_login" required="required" type="password" placeholder="12345678" />
+              </p>
+              <p>
+                <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+                <label for="manterlogado">Manter-me logado</label>
+              </p>
+              <p>
+                <input type="submit" value="Logar" />
+              </p>
+              <p class="link"> Ainda não tem conta? <a href="#paracadastro">Cadastre-se</a></p>
+            </form>
+          </div>
+          <!--FORMULÁRIO DE CADASTRO-->
+          <div id="cadastro">
+            <form method="post" action="">
+              <h1>Cadastro</h1>
+              <p>
+                <label for="nome_cad">Seu nome</label>
+                <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome Sobrenome" />
+              </p>
+              <p>
+                <label for="email_cad">Seu e-mail</label>
+                <input id="email_cad" name="email_cad" required="required" type="email" placeholder="seunome@adoble.com"/>
+              </p>
+              <p>
+                <label for="senha_cad">Sua senha</label>
+                <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="12345678"/>
+              </p>
+              <p>
+                <input type="submit" value="Cadastrar"/>
+              </p>
+              <p class="link"> Já tem conta? <a href="#paralogin"> Ir para Login </a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
